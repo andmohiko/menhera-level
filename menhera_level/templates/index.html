@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+  <h1>メンヘラレベル測定</h1>
+  <div class="input">
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <div>
+        <label for="tweet">ツイート入力</label><br>
+        <textarea name="tweet" rows="4" cols="40" placeholder="病んだ😢"></textarea><br>
+      </div>
+      <div class="button">
+        <input type="submit" value="送信">
+      </div>
+    </form>
+  </div>
+  <div class="result">
+    <p>予測結果</p>
+    <p>{{ original_text }}</p>
+    <p>{{ tweet_words }}</p>
+    <p>メンヘラ度: {{ prediction }} %</p>
+  </div>
+</div>
+
+{% endblock %}
