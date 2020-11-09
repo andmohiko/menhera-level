@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+  .input {
+    border: 1px solid gray; }
+
+    h1 {
+      color: orange; }
+
+      .button {
+        border: 1px solid yellow; }
