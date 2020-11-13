@@ -3,6 +3,7 @@ import pickle
 from flask import Flask, render_template, request
 from flask_assets import Environment, Bundle
 import numpy as np
+from sklearn.ensemble import RandomForestClassifier
 
 from wordsplit import get_words
 from load_model import load_models

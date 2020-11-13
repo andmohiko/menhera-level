@@ -1,4 +1,6 @@
 import pickle
+
+from sklearn.ensemble import RandomForestClassifier
 from gensim.models import KeyedVectors
 
 
